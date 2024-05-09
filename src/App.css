@@ -6,14 +6,83 @@ html {
 main {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    /* height: 100vh; */
 }
 
 .photo {
-    width: 60%;
+    background-image: url(./assets/unsplash_Hcfwew744z4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
+    width: 60%;
+
+    /* height: 100vh; */
 }
 
-.photo img {
+.user {
+    width: 40%;
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: #121214;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16rem;
+}
+
+.presentation span {
+    color: #B9B9B9;
+    font-weight: 700;
+    font-size: 1.6rem;
+    
+    letter-spacing: .1rem;
+    margin-left: 1rem;
+}
+
+.datas {
+    background-color: #18181A;
+    width: 70%;
+    margin-bottom: 12rem;
+}
+
+.datas form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.datas form h1{
+    
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+.datas form .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datas form .inputs .field {
+    background-color: #121214;
+    margin-bottom: .5rem;
+    width: 90%;
+    
+}
+
+.datas form .inputs .field input {
+    background-color: transparent;
+    border: 0;
+    color: #B9B9B9;
+    font-size: 1.6rem;
+    font-weight: 500;
+
 }

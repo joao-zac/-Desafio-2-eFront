@@ -1,4 +1,4 @@
-<h1 align="center">Advice Generator</h1>
+<h1 align="center">Desafio eFront</h1>
 <div align="center">
 
 <p align="center"><strong>Status do Projeto:<br></strong> <i>Em andamento </i>🚧</p>
