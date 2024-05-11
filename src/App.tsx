@@ -38,10 +38,9 @@ function App() {
               </div>
               
               <div className="field">
-                  <img src={eye} alt="" />
-                  <input type="text" placeholder='Senha'/>
+                <img src={eye} alt="" />
+                <input type="text" placeholder='Senha'/>
               </div>
-              
               
             </div>
 

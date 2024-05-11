@@ -74,8 +74,14 @@ main {
 .datas form .inputs .field {
     background-color: #121214;
     margin-bottom: .5rem;
+    padding: 1rem .5rem;
+    display: flex;
     width: 90%;
     
+}
+
+.datas form .inputs .field img {
+    margin-right: .5rem;
 }
 
 .datas form .inputs .field input {
@@ -84,5 +90,5 @@ main {
     color: #B9B9B9;
     font-size: 1.6rem;
     font-weight: 500;
-
+    width: 90%;
 }
