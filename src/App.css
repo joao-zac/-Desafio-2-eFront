@@ -6,7 +6,6 @@ html {
 main {
     display: flex;
     align-items: center;
-    /* height: 100vh; */
 }
 
 .photo {
@@ -15,8 +14,16 @@ main {
     background-size: cover;
     height: 100vh;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
-    /* height: 100vh; */
+.photo p {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 45rem 4rem 4rem;
 }
 
 .user {
@@ -32,13 +39,17 @@ main {
     background-color: #121214;
 }
 
-.presentation {
+.user .presentation {
     display: flex;
     align-items: center;
-    margin-bottom: 16rem;
+    margin-bottom: 10rem;
 }
 
-.presentation span {
+.user .presentation img {
+    background-color: #18181A;
+}
+
+.user .presentation span {
     color: #B9B9B9;
     font-weight: 700;
     font-size: 1.6rem;
@@ -49,8 +60,9 @@ main {
 
 .datas {
     background-color: #18181A;
-    width: 70%;
+    width: 80%;
     margin-bottom: 12rem;
+    border-radius: .8rem;
 }
 
 .datas form {
@@ -60,7 +72,7 @@ main {
 }
 
 .datas form h1{
-    
+    padding: 5rem 6rem;
     font-size: 4rem;
     color: #FFFFFF;
 }
@@ -76,8 +88,8 @@ main {
     margin-bottom: .5rem;
     padding: 1rem .5rem;
     display: flex;
-    width: 90%;
-    
+    width: 80%;
+    border-radius: .4rem;
 }
 
 .datas form .inputs .field img {
@@ -92,3 +104,28 @@ main {
     font-weight: 500;
     width: 90%;
 }
+
+.datas form a {
+    text-decoration: none;
+    color: #899BFF;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: start;
+    padding-left: 5.2rem;
+}
+
+.datas form button {
+    width: 80%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    margin-left: 5.2rem;
+    margin-bottom: 5rem;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-image: linear-gradient(#899BFF 100%, #5C6DCF 100%);
+    color: #FFFFFF;
+};
+

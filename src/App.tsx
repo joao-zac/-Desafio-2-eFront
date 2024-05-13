@@ -46,7 +46,7 @@ function App() {
 
             <a href="https://www.google.com">Esqueci minha senha</a>
 
-            <button>Entrar</button>
+            <button>ENTRAR</button>
 
           </form>
 
