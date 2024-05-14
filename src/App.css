@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     font-size: 62.5%;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway';
+}
+
+body {
+    font-family: 'Raleway';
 }
 
 main {
@@ -23,7 +29,7 @@ main {
     font-size: 3.2rem;
     font-weight: 600;
     color: #FFFFFF;
-    margin: 0 45rem 4rem 4rem;
+    margin: 0 36rem 4rem 4rem;
 }
 
 .user {
@@ -69,70 +75,9 @@ main {
     text-align: center;
 }
 
-.datas form {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;  PRESTAR ATENÇÃO NESSSA REGRA */
-    margin: 0 12%;
-}
-
 .datas h1{
     /* padding: 5rem 6rem; */
     padding: 5rem;
     font-size: 4rem;
     color: #FFFFFF;
 }
-
-.datas form .inputs {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.datas form .inputs .field {
-    background-color: #121214;
-    margin-bottom: .5rem;
-    padding: 1rem .5rem;
-    display: flex;
-    width: 100%;
-    border-radius: .4rem;
-}
-
-.datas form .inputs .field img {
-    margin-right: .5rem;
-}
-
-.datas form .inputs .field input {
-    background-color: transparent;
-    border: 0;
-    color: #B9B9B9;
-    font-size: 1.6rem;
-    font-weight: 400;
-    /* width: 90%; */
-}
-
-.datas form a {
-    text-decoration: none;
-    color: #899BFF;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-align: start;
-    /* padding-left: 5.2rem; */
-}
-
-.datas form button {
-    /* width: 80%; */
-    padding: 1rem 0;
-    margin-top: 2rem;
-    /* margin-left: 5.2rem; */
-    margin-bottom: 5rem;
-    border: 0;
-    border-radius: .4rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    cursor: pointer;
-    background-image: linear-gradient(#899BFF 100%, #5C6DCF 100%);
-    color: #FFFFFF;
-};
-

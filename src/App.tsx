@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 
 import './App.css'
+import { StylesForm } from './StylesForm'
 
 import logo from "./assets/logo.svg"
 import eye from "./assets/eye.svg"
@@ -42,7 +43,7 @@ function App() {
 
           <h1>Faça seu login na plataforma</h1>
 
-          <form onSubmit={handleSubmit(submitConsole)}>
+          <StylesForm onSubmit={handleSubmit(submitConsole)}>
 
             <div className='inputs'>
               
@@ -66,7 +67,7 @@ function App() {
 
             <button type='submit'>ENTRAR</button>
 
-          </form>
+          </StylesForm>
 
         </div>
         
