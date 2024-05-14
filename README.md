@@ -78,17 +78,25 @@ Este site foi construído com:
 
   - [🚧] O site deve seguir o [Design](#3-design) proposto;
 
-  - [🚧] Os campos de e-mail e senha devem estar com dados;
+  - [✅] Os campos de e-mail e senha devem estar com dados;
 
-  - [🚧] Os dados devem ser enviados para o console.log;
+  - [🚧] Usar Styled Components;
+
+  - [✅] Usar biblioteca React Hook Forms;
+
+  - [🚧] A senha deve conter 8 caracteres;
+
+  - [🚧] Deverá ser mostrado erros se os campos estiverem vazios ou mal preenchidos;
+
+  - [✅] Os dados devem ser enviados para o console.log;
 
   - [✅] Criar README do projeto;
 
 - **Imagem:**
 
-  - [🚧] Estar localizado exatamente como no design;
+  - [✅] Estar localizado exatamente como no design;
 
-  - [🚧] Texto no canto inferior esquerdo;
+  - [✅] Texto no canto inferior esquerdo;
 
 - **Responsividade**
 
