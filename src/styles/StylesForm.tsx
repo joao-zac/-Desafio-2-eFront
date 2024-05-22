@@ -25,20 +25,31 @@ export const StylesForm = styled.form`
 
             input {
                 background-color: transparent;
-                border: 0;
+                border: none;
                 color: #B9B9B9;
                 font-size: 1.6rem;
                 font-weight: 400;
+                width: 90%;
             }
         }
     }
 
     a {
+        margin-bottom: .5rem;
         text-decoration: none;
         color: #899BFF;
         font-size: 1.3rem;
         font-weight: 600;
         text-align: start;
+    }
+
+    .alert-span {
+        margin-top: .5rem;
+        text-align: start;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fe4141e8;
+
     }
 
     button {

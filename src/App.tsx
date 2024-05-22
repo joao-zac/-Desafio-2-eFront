@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 
 import './App.css'
-import { StylesForm } from './StylesForm'
+import { StylesForm } from './styles/StylesForm'
 
 import logo from "./assets/logo.svg"
 import eye from "./assets/eye.svg"
@@ -17,7 +17,7 @@ function App() {
   //  const { register, handleSubmit, formState: {errors} } = useForm<dados>();
   //  DESCOMENTAR QUANDO IMPLEMENTAR MENSAGEM DE ERRO!
 
-  const { register, handleSubmit } = useForm<dados>();
+  const { register, handleSubmit, formState: {errors} } = useForm<dados>();
 
   const submitConsole = (data: dados) => console.log(data)
 
@@ -30,11 +30,13 @@ function App() {
       </div>
 
       <div className='user'>
-
         
         <div className="presentation">
 
-          <img src={logo} alt="" />
+          <div className="circle">
+            <img src={logo} alt="Logo" />
+          </div>
+          
           <span>EFRONT</span>
 
         </div>  
@@ -50,20 +52,23 @@ function App() {
               <div className="field">
                 <img src={arroba} alt="" />
                 <input type="email" placeholder='E-mail' {...register("email", { required: true })}/>
-                {/* {errors.email && <p>Coloque seu E-mail!</p>} */}
+                
               </div>
               
               <div className="field">
                 <img src={eye} alt="" />
                 <input type="password" placeholder='Senha' {...register("senha", { required: true, minLength: 8})}/>
-                {/* {errors.senha && <p>Coloque sua senha!</p>}
-                {errors.senha?.type === "minLength" &&  
-                <p>A senha deve ter no mínimo 8 caracteres!</p>}*/}
+                
               </div>
               
             </div>
 
-            <a href="https://www.google.com">Esqueci minha senha</a>
+            <a href="#">Esqueci minha senha</a>
+
+            {errors.email && <span className='alert-span'>Coloque seu e-mail!</span>}
+            {errors.senha && <span className='alert-span'>Coloque sua senha!</span>}
+            {errors.senha?.type === "minLength" &&  
+            <span className='alert-span'>A senha deve ter no mínimo 8 caracteres!</span>}
 
             <button type='submit'>ENTRAR</button>
 
